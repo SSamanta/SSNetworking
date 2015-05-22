@@ -1,0 +1,10 @@
+framework module SSHTTPClient {
+  umbrella header "SSHTTPClient.h"
+
+  export *
+  module * { export * }
+}
+
+module SSHTTPClient.Swift {
+    header "SSHTTPClient-Swift.h"
+}
