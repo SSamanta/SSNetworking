@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let client = SSHTTPClient(url: "", method: "", httpBody: "", headerFieldsAndValues: [:])
+        let client = SSHTTPClient(url: "http://itunes.apple.com/us/rss/topfreeapplications/limit=100/json", method: "GET", httpBody: "", headerFieldsAndValues: [:])
         client.getJsonData { (obj, error) -> Void in
             print(obj)
         }
@@ -21,7 +21,6 @@ class ViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
